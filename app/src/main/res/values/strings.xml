@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">GeoSismoApp</string>
+    <string name="ventana_nombre">Iniciar Sesión</string>
+    <string name="usuario">Usuario</string>
+    <string name="contraseñaActual">Contraseña Actual</string>
+    <string name="contraseñaNueva">Contraseña Nueva</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="btn_google">Iniciar sesión con Google</string>
+    <string name="pregunta">No tienes una cuenta ?</string>
+    <string name="registrar">Regístrate </string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="r_contraseña">Repetir contraseña</string>
+    <string name="btn_registrar">Registrar</string>
+    <string name="pregunta1">Ya tienes una cuenta ?</string>
+    <string name="not_log_in">No se pudo iniciar sesión</string>
+    <string name="bienvenido">Bienvenid@:</string>
+    <string name="btnReportar">Reportar</string>
+    <string name="profundidad">Profundidad:</string>
+    <string name="magnitud">Magnitud:</string>
+    <string name="ciudadMasCercana">CiudadMasCercana:</string>
+    <string name="horaLocal">Hora local:</string>
+    <string name="comentario">¿Cómo sintió el sismo?:</string>
+    <string name="edificio">¿Dónde se encuentró durante el sismo?:</string>
+    <string name="ubicacion">Ubicación</string>
+    <string name="compartir">Compartir en: </string>
+
+    <string name="actualizar">Actualizar</string>
+    <string name="actualizarContraseña">Actualizar Contraseña</string>
+    <string name="ingreseContrasenia">Ingrese su Contraseña</string>
+    <string name="ingreseNuevaContrasenia">Ingrese su  Nueva Contraseña</string>
+    <string name="verifiqueNContrasenia">Verifique su Nueva Contraseña</string>
+    <string name="email">Email</string>
+    <string name="facebook_app_id">728941744423599</string>
+    <string name="facebook_login_protocol_scheme">fb728941744423599</string>
+    <string name="map_key" translatable="false">AIzaSyCJ9jggNkRJ0swU0DjehHBU0fBVpq5xs1Y</string>
+</resources>

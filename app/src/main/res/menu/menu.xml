@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/ic_menu"
+        android:title="menu"
+        android:id="@+id/menu"
+        app:showAsAction="always"
+        >
+        <menu>
+            <item
+                android:icon="@drawable/ic_home_black"
+                android:title="Inicio"
+                android:id="@+id/inicio"
+                app:showAsAction="always"
+                />
+            <item
+                android:icon="@drawable/ic_person"
+                android:title="Datos del usuario"
+                android:id="@+id/usuario"
+                app:showAsAction="always"
+                />
+            <item
+                android:icon="@drawable/ic_style_black_24dp"
+                android:title="Lista de sismos"
+                android:id="@+id/listaSismos"
+                app:showAsAction="always"
+                />
+            <item
+                android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+                android:title="Lista de sismos reportados"
+                android:id="@+id/listaSismosReportados"
+                app:showAsAction="always"
+                />
+            <item
+                android:id="@+id/cerrarSesion"
+                android:icon="@drawable/ic_session"
+                android:title="Cerrar sesión"
+                app:showAsAction="always" />
+        </menu>
+    </item>
+</menu>

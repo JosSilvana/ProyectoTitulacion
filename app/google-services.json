@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "78348714648",
+    "firebase_url": "https://serviciowebsismos.firebaseio.com",
+    "project_id": "serviciowebsismos",
+    "storage_bucket": "serviciowebsismos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78348714648:android:5277b79ed3e0aeb18846ed",
+        "android_client_info": {
+          "package_name": "com.uisrael.geosismoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "78348714648-hcltsbgkljfa9k7plevt4dddm75aj079.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uisrael.geosismoapp",
+            "certificate_hash": "0ce2e6471a8e4aa633cd89da22435fb8350250bc"
+          }
+        },
+        {
+          "client_id": "78348714648-fmn2nec2pel6hnej2obubjlom0jbn9s7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ9jggNkRJ0swU0DjehHBU0fBVpq5xs1Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "78348714648-fmn2nec2pel6hnej2obubjlom0jbn9s7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
