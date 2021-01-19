@@ -1,0 +1,524 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  padding-top: 60px;
+  background: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #64686d;
+  line-height: 26px;
+  overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  color: #272727;
+}
+
+h4 {
+  padding-left: 10px;
+  color: #72C05B;
+}
+
+p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+}
+a {
+  color: #5DADE2;
+  -webkit-transition: color 400ms, background-color 400ms;
+  -moz-transition: color 400ms, background-color 400ms;
+  -o-transition: color 400ms, background-color 400ms;
+  transition: color 400ms, background-color 400ms;
+  cursor: pointer;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #5DADE2;
+}
+
+/* Titulo de la pagina*/
+.titulo {
+  padding: 50px 0;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.titulo h1 {
+  margin: 0 ;
+  font-size: 20px;
+}
+
+/*Titulo del formulario */
+.division .titulo {
+    position: relative;
+    z-index: 1;
+    border-left: 5px solid #5DADE2; /*Borde izquierdo del titulo iniciar sesion*/
+    margin: 0 0 35px;
+    padding: 10px 0 10px 20px;
+    color: #5DADE2;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/*Division */
+.division {
+  position: relative;
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 60px 0 40px 0;
+  box-sizing: border-box;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.division:first-child {
+  background: #fafafa;
+  height: 10px;
+  border-radius: 5px 5px 0 0;
+  margin: 0 10px;
+  padding: 0;
+}
+
+/*Campos del formulario */
+.input-container, .division .input-container {
+  position: relative;
+  margin: 0 60px 40px;
+}
+
+.input-container input, .input-container textarea, .division .input-container input {
+    outline: none;
+    z-index: 1;
+    position: relative;
+    background: none;
+    width: 100%;
+    height: 60px;
+    border: 0; /* quita el borde de la caja de texto */
+    font-weight: 400;
+}
+
+/*Transforma el texto más pequeño al momento de escribir el usuario o contraseña o datos del sitio turistico */
+.input-container input:focus ~ label, .input-container textarea:focus ~ label, .division .input-container input:focus ~ label{
+  color: #9d9d9d;
+  -webkit-transform: translate(-12%, -50%) scale(0.75);
+          transform: translate(-12%, -50%) scale(0.75);
+}
+
+.input-container input:focus ~ .bar:before, .input-container input:focus ~ .bar:after, .input-container textarea:focus ~ .bar:before,  
+.input-container textarea:focus ~ .bar:after,.division .input-container input:focus ~ .bar:before, 
+.division .input-container input:focus ~ .bar:after {
+  width: 50%;
+}
+
+
+.input-container input:valid ~ label, .input-container textarea:valid ~ label,
+.division .input-container input:valid ~ label {
+  color: #9d9d9d;
+  -webkit-transform: translate(-12%, -50%) scale(0.75);
+          transform: translate(-12%, -50%) scale(0.75);
+}
+
+/*Estilo del label de los campos del formulario */
+.input-container label, .division .input-container label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #5DADE2;
+  font-weight: 300;
+  line-height: 60px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  padding-bottom:50px;
+}
+
+/*Creación de la linea de separación de los campos del formulario */
+.input-container .bar, .division .input-container .bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #5DADE2;
+  width: 100%;
+  height: 1px;
+}
+
+/*Cambia de color la linea de separacion de los campos del formulario al momento que el usuario escriba*/
+.input-container .bar:before, .input-container .bar:after, .division .input-container .bar:before, .division .input-container .bar:after {
+    content: '';
+    position: absolute;
+    background: #5DADE2;
+    width: 0;
+    height: 2px;
+    -webkit-transition: .2s ease;
+    transition: .2s ease;
+}
+
+
+/*Mitad de la linea al momento que usuario va a escribir*/
+.input-container .bar:before, .division .input-container .bar:before {
+  left: 50%;
+}
+/*Mitad de la linea al momento que usuario va a escribir*/
+.input-container .bar:after, .division .input-container .bar:after {
+  right: 50%;
+}
+
+/*Estilos boton*/
+.division .btn-primary  {
+  outline: 0;
+  position: relative;
+  display: inline-block;
+  background: #5DADE2;
+  color: black;
+  width: 240px;
+  border: 2px solid #72C05B;
+  padding: 20px 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  overflow: hidden;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  margin-left: 45px;
+}
+
+.division .btn-primary:active{
+  background: #5DADE2;
+  border-color: #5DADE2;
+  color: black;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color: #fff;
+  background: #2e2e2e;
+}
+
+
+
+h4 {
+  padding-left: 10px;
+  color: #5DADE2;
+}
+
+/*Estilos personalizados para pantallas móviles */
+@media (max-width: 705px){
+  
+  /*Scroll de la pagina */
+  body{
+    overflow-y:auto;
+    overflow-x: hidden; 
+  }
+
+  /*Titulo del formulario */
+  .division .titulo {
+    font-size: 22px;
+   
+  }
+  /*Estilo del botón ingresar*/
+  .division .btn-primary  {
+    width: 100px;
+    font-size: 14px; 
+    margin-left: 15px; 
+  }
+  /*Estilo caja d texto */
+  .division .input-container input {
+    height: 40px;
+    font-size: 14px;
+  } 
+}
+
+/*Menu activo */
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff; 
+    border-bottom:2px solid #5DADE2;
+    background: transparent;
+    
+}
+/*Estilo botones*/
+.btn.btn-primary,.btn.btn-primary:hover,.btn.btn-primary:focus, .btn.btn-primary:active {
+  border-color: #5DADE2;
+  color: black;
+  background: #5DADE2;
+}
+
+
+/*Menú de la página */
+.navbar.navbar-default {
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.navbar.navbar-default .navbar-toggle {
+  margin-top: 32px;
+}
+.navbar-header .navbar-brand {
+  padding:5px 0;
+}
+.navbar-header .navbar-brand a {
+  height: auto;
+  display: inline-block;
+ 
+}
+
+/*Elimina la sepacion que hay entre el menú de la página y el carucel */
+#top-header {
+  padding: 10px 0;
+}
+
+
+.titulo-registro .section-title {
+    margin-bottom: 15px;
+    display: block;
+    clear: both;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    font-weight: 400;
+    color: #262f32;
+    text-transform: uppercase;
+}
+
+/*Estilos del portafolio de los sitios turisticos*/
+
+#portfolio {
+  padding: 100px 0;
+  background: #f5f5f5;
+}
+
+/*Fondo que muestra las opciones de modificar o eliminar un sitio*/
+#portfolio .portfolio-item-inner .portfolio-info {
+  opacity: 0;
+  transition: opacity 400ms;
+  -webkit-transition: opacity 400ms;
+  position: absolute;
+  bottom: 0;
+  top: 30px;
+  left: 15px;
+  right: 75px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+/*Fondo que muestra las opciones de modificar o eliminar un sitio para pantallas móviles*/
+@media (max-width: 693px){
+  #portfolio .portfolio-item-inner .portfolio-info {
+    bottom: 20px;
+    right: 15px;
+  }
+
+}
+
+/*Fondo que muestra las opciones de modificar o eliminar un sitio para pantallas móviles*/
+@media (max-width: 1024px){
+  #portfolio .portfolio-item-inner .portfolio-info {
+    right: 11px;
+  }
+
+}
+
+#portfolio .portfolio-item-inner .portfolio-info h3 {
+  color: #fff;
+  text-align: center;
+  padding-top: 150px; /*Posicion del texto cuando esta en hover*/
+}
+
+/*Muestra las opciones al pasar el mouse por encima*/
+#portfolio .portfolio-item-inner:hover .portfolio-info {
+  opacity: 1;
+}
+
+
+
+@media (max-width: 1000px){
+  .col-sm-6  .portfolio-item-inner {
+    padding-bottom: 20px;
+  }
+
+}
+
+/*Estilo de iconos para modificar o eliminar un sitio */
+.portfolio-item-inner .glyphicon-remove:before, .glyphicon-pencil:before {
+  font-size: 35px;
+  position: absolute;
+  top: 70px;
+  left: 55px;
+}
+
+.glyphicon-download:before {
+  font-size: 35px;
+  position: absolute;
+  top: 125px;
+  left: 125px;
+
+}
+
+/*Estilos portafolio filtrar*/
+.filtrar ul {
+  background-color: #222;
+  border-color: #080808;
+}
+
+.filtrar a {
+  color: #9d9d9d;
+}
+
+.filtrar ul li a:hover, .filtrar .active{
+  border-bottom:2px solid #5DADE2;
+  color:#fff;
+  background:transparent;
+}
+
+/*Estilos de pie de pagina */
+footer {
+  padding-top: 10px;
+  padding-bottom: 3px;
+  color: #fff;
+  background: #2e2e2e;
+}
+
+
+.alert-danger, .alert-success {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+/*Estilos personalizados de mensaje de error para pantallas moviles*/
+@media (max-width: 640px){
+  .alert-danger {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+}
+
+/*Estilos para la etiqueta select */
+.tipo label{
+  font-weight: 300;
+  color:#64686d;
+  padding-left:10px;
+ }
+
+ .tipo select {
+  border-color: #5DADE2;
+  cursor: pointer;
+  margin-left: 10px;
+  width: 435px;
+ }
+
+ /*Estilos personalizados de mensaje de error para pantallas moviles*/
+@media (max-width: 414px){
+  .tipo label{
+    margin-left: 30px;
+  }
+
+  .tipo select {
+    margin-left: 30px;
+    width: 250px;
+    margin-bottom: 30px;
+  }
+}
+
+ /*Estilo para imagenes del portafolio*/
+ .portfolio-item-inner .img-responsive {
+    height: 300px;
+    margin-top: 30px;
+    width: 300px;
+}
+
+
+/*Estilos personalizados de mensaje de error para pantallas moviles*/
+@media (max-width: 1125px){
+/*Estilo para imagenes del portafolio*/
+ .portfolio-item-inner .img-responsive {
+    height: 300px;
+    margin-top: 30px;
+    width: 500px;
+  }
+
+}
+
+/*Estilos para efecto please-wait*/
+.spinner {
+  margin: 100px auto 0;
+  width: 70px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+/*Paginación*/
+.pagination ul>.active>a, .pagination ul>.active>span {
+  color:#5DADE2;
+  background: black;
+}
+
+.pagination ul>li>a:hover, .pagination ul>li>a:focus, .pagination ul>.active>a, .pagination ul>.active>span {
+  color: white;
+  background-color: #5DADE2;
+}
+
+
+/*Input Buscador*/
+.buscar {
+  width: 320px;
+  height: 35px;
+  border: none;
+}
+
+
+.glyphicon-search:before {
+  background: #5DADE2;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 11px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.glyphicon-triangle-left:before, .glyphicon-triangle-right:before{
+    color: #5DADE2;
+}
+

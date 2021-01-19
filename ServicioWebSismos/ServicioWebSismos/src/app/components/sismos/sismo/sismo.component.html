@@ -1,0 +1,79 @@
+<form #sismoForm="ngForm" (ngSubmit)="onSubmit(sismoForm)">
+	<input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="sismoService.selectedSismo.$key">
+	<div class="row">
+		<div class="col-lg-6">
+			<div class="input-container">
+				<input type="text" name="idEvento" #idEvento="ngModel" [(ngModel)]="sismoService.selectedSismo.idEvento" required>
+				<label>Id Evento</label>
+				<div class="bar"></div>
+			</div>
+			<div class="input-container">
+				<input type="text" name="magnitud" #magnitud="ngModel" [(ngModel)]="sismoService.selectedSismo.magnitud" required>
+				<label>Magnitud</label>
+				<div class="bar"></div>
+			</div>
+			<div class="input-container">
+                <input type="text"name="tipo" id="tipo"  #tipo="ngModel" [(ngModel)]="sismoService.selectedSismo.tipo" required>
+				<label>Tipo</label>
+				<div class="bar"></div>
+			</div>
+			<div  class="input-container">
+				<input type="datetime-local" name="horaLocal" #horaLocal="ngModel" [(ngModel)]="sismoService.selectedSismo.horaLocal" required>
+				<label>Hora Local</label>
+				<div class="bar"></div>
+			</div>
+			<div class="input-container">
+				<input type="text" name="latitud" #latitud="ngModel" [(ngModel)]="sismoService.selectedSismo.latitud" required>
+				<label>Latitud</label>
+				<div class="bar"></div>
+			</div>
+			<div class="input-container">
+				<input type="text" name="longitud" #longitud="ngModel" [(ngModel)]="sismoService.selectedSismo.longitud" required>
+				<label>Longitud</label>
+				<div class="bar"></div>
+			</div>
+		</div>
+		<div class="col-lg-6">
+			<div class="input-container">
+				<input type="text" name="profundidad" #profundidad="ngModel" [(ngModel)]="sismoService.selectedSismo.profundidad" required>
+				<label>Profundidad</label>
+				<div class="bar"></div>
+			</div>
+			<div class="input-container">
+				<input type="text" name="region" #region="ngModel" [(ngModel)]="sismoService.selectedSismo.region" required>
+				<label>Region</label>
+				<div class="bar"></div>
+			</div>
+			<div class="input-container">
+				<input type="text" name="ciudadMasCercana" #ciudadMasCercana="ngModel" [(ngModel)]="sismoService.selectedSismo.ciudadMasCercana" required>
+				<label>Ciudad mas cercana</label>
+				<div class="bar"></div>
+			</div>
+			<div class="input-container">
+				<input type="text" name="modo" #modo="ngModel" [(ngModel)]="sismoService.selectedSismo.modo" required>
+				<label>Modo</label>
+				<div class="bar"></div>
+			</div>
+			<div class="input-container">
+				<input type="datetime-local" name="horaUTC" #horaUTC="ngModel" [(ngModel)]="sismoService.selectedSismo.horaUTC" required>
+				<label>Hora UTC</label>
+				<div class="bar"></div>
+			</div>
+			<div class="input-container">
+				<input type="datetime-local" name="update" #update="ngModel" [(ngModel)]="sismoService.selectedSismo.update" required>
+				<label>Hora Actualizada</label>
+				<div class="bar"></div>
+			</div>
+		</div>
+	</div>
+	<div class="row w-100 align-items-center">
+		<div class="col text-center">
+			<button class="btn btn-primary" type="submit">
+                <i class="fas fa-plus-circle"> Añadir Sismo</i>
+			</button>
+			<button class="btn btn-secondary" type="reset" (click)="resetForm(sismoForm)">
+                <i class="fas fa-sync-alt"> Resetear</i>
+            </button>
+		</div>	
+	</div>
+</form>
